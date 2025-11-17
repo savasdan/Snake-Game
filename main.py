@@ -32,7 +32,7 @@ while game_is_on:
         snake.extend()
         score.increase_score()
 
-    # Detect collision with food.
+    # Detect collision with wall.
     if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
         score.reset()
         score.game_over()
